@@ -1,4 +1,4 @@
-[**Backend**](https://github.com/Torri04/Live-Chat-Backend/tree/master)
+**SignalR Live Chat Backend with .NET Core API**: [Backend](https://github.com/Torri04/Live-Chat-Backend/tree/master)
 
 # Getting Started with Create React App
 
