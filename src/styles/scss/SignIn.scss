@@ -1,0 +1,112 @@
+.signin {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+    .signin-form {
+        width: 500px;
+        height: 400px;
+        background-color: white;
+        box-shadow: 0px 0px 5px 5px #f0f0f0;
+        margin: auto;
+        border-radius: 15px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        .title {
+            font-weight: bold;
+            font-size: 2rem;
+        }
+
+        .user,
+        .pass {
+            position: relative;
+
+            label {
+                position: absolute;
+                left: 8px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 1.6rem;
+                transition: ease all 0.3s;
+            }
+
+            input {
+                width: 100%;
+                height: 45px;
+                border: 2px solid #f0f0f0;
+
+                &:not(:placeholder-shown)~label {
+                    top: 2px;
+                    transform: none;
+                    font-size: 1.2rem;
+                }
+
+            }
+
+            i {
+                font-size: 1.8rem;
+                color: var(--main-color);
+                position: absolute;
+                right: 10px;
+                top: calc(50% - 0.9rem);
+                cursor: pointer;
+                transition: 0.3s;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+
+            span {
+                position: absolute;
+                font-size: 1.2rem;
+                color: red;
+                left: 8px;
+                bottom: -15px
+            }
+        }
+
+        .remem-forget {
+            display: flex;
+            justify-content: space-between;
+
+            .remember {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            }
+
+            .forget {
+                font-style: italic;
+                font-size: 1.4rem;
+            }
+        }
+
+        button {
+            width: 200px;
+            height: 40px;
+            margin: auto;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+                color: white;
+                background-color: var(--main-color);
+            }
+        }
+
+        .last-row {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+
+            .signup-last {
+                color: var(--main-color)
+            }
+        }
+    }
+}
